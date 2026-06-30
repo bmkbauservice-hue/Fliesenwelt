@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fliesenwelt</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<link rel="stylesheet" href="styles.css">
+
+<body>
+    
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+    <div class="logo">
+
+        <div class="tiles">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <h1>Fliesenwelt</h1>
+
+    </div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Gallery</a>
+        <a href="#">Über uns</a>
+        <a href="#">Impressum</a>
+    </nav>
+
+</header>
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        <!-- Hero -->
+
+        <section class="hero">
+
+    <div class="hero-content">
+
+        <h2>
+
+            Perfekte Fliesen.<br>
+            Perfekte Räume.
+
+        </h2>
+
+        <p>
+
+            Hochwertige Fliesenarbeiten für Badezimmer,
+            Wohnräume und Terrassen.
+
+        </p>
+
+        <button>Galerie ansehen</button>
+
+    </div>
+
+</section>
+
+        </section>
+
+        <!-- Services -->
+
+        <section class="services">
+
+            <article>
+
+                <h3>🛁 Badezimmer</h3>
+
+                <p>
+
+                    Moderne Bäder mit hochwertigen Fliesen.
+
+                </p>
+
+            </article>
+
+            <article>
+
+                <h3>🏡 Wohnräume</h3>
+
+                <p>
+
+                    Elegante Fliesen für Küche und Wohnbereich.
+
+                </p>
+
+            </article>
+
+            <article>
+
+                <h3>🌿 Terrassen</h3>
+
+                <p>
+
+                    Wetterfeste Lösungen für den Außenbereich.
+
+                </p>
+
+            </article>
+
+        </section>
+
+        <!-- Gallery -->
+
+        <section class="gallery-section">
+
+    <h2>Unsere Arbeiten</h2>
+
+    <div class="gallery">
+
+        <img src="images/01.jpg" alt="" onclick="openImage(this.src)">
+        <img src="images/02.jpg" alt="" onclick="openImage(this.src)">
+        <img src="images/03.jpg" alt="" onclick="openImage(this.src)">
+        <img src="images/04.jpg" alt="" onklick="openImage(this.src)">
+        <img src="images/05.jpg" alt="" onklick="openImage(this.src)">
+        <img src="images/06.jpg" alt="" onklick="openImage(this.src)">
+        <img src="images/07.jpg" alt="" onklick="openImage(this.src)">
+        <img src="images/08.jpg" alt="" onklick="openImage(this.src)">
+        <img src="images/09.jpg" alt="" onklick="openImage(this.src)">
+        <img src="images/10.jpg" alt="" onklick="openImage(this.src)">
+    </div>
+
+</section>
+
+<section class="contact">
+
+    <h2>Kontakt</h2>
+
+    <form>
+
+        <input type="text" placeholder="Ihr Name" required>
+
+        <input type="email" placeholder="E-Mail" required>
+
+        <input type="tel" placeholder="Telefon">
+
+        <textarea placeholder="Ihre Nachricht"></textarea>
+
+        <button type="submit">Nachricht senden</button>
+
+    </form>
+
+</section>
+
+        <!-- Über Uns -->
+
+        <section class="about">
+
+            <h2>Über uns</h2>
+
+            <p>
+
+                Qualität, Präzision und Leidenschaft für Fliesenarbeiten –
+                dafür stehen wir seit vielen Jahren.
+
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>© 2026 Fliesenwelt</p>
+
+        <a href="#">Impressum</a>
+
+    </footer>
+</footer>
+
+<div id="lightbox">
+
+    <span onclick="closeImage()">×</span>
+
+    <img id="lightbox-img">
+
+</div>
+
+<script>
+
+function openImage(src){
+
+    document.getElementById("lightbox").style.display="flex";
+    document.getElementById("lightbox-img").src = src;
+
+}
+
+function closeImage(){
+
+    document.getElementById("lightbox").style.display="none";
+
+}
+
+</script>
+
+</body>
+</html>    
+<script>
+
+function openImage(src){
+
+    document.getElementById("lightbox").style.display="flex";
+
+    document.getElementById("lightbox-img").src=src;
+
+}
+
+function closeImage(){
+
+    document.getElementById("lightbox").style.display="none";
+
+}
+
+</script>
+    
+
+
+
+</body>
+
+</html>
