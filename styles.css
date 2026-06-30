@@ -34,7 +34,7 @@ header{
     display: flex;
     align-items: center;
 
-    padding: 20px 40px;
+    padding: 15px;
 
     border: 1px solid rgba(216,176,106,.8);
     border-radius: 18px;
@@ -72,9 +72,9 @@ header{
 
     font-family:'Bebas Neue', sans-serif;
 
-    font-size:42px;
-
+    font-size:30px;
     letter-spacing:1px;
+    -webkit-text-stroke:1px #d8b06a;
 
     color:#000;
 
@@ -112,9 +112,9 @@ nav{
 
     display: flex;
 
-    gap: 45px;
+    gap: 15px;
 
-    margin-left: auto;
+    margin-top: 10px;
 
 }
 
@@ -175,9 +175,9 @@ nav a:hover{
 
 .hero h2{
 
-    font-size: 42px;
+    font-size: 16px;
 
-    line-height: 1.1;
+    line-height: 1.6;
 
     margin-bottom: 30px;
 
