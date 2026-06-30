@@ -72,9 +72,9 @@ header{
 
     font-family:'Bebas Neue', sans-serif;
 
-    font-size:70px;
+    font-size:42px;
 
-    letter-spacing:3px;
+    letter-spacing:1px;
 
     color:#000;
 
@@ -164,18 +164,18 @@ nav a:hover{
     display:flex;
     align-items:center;
 
-    padding:0 8%;
+    padding:120px 25px 60px;
 }
 
 .hero-content{
 
-    max-width:520px;
+    max-width:100%;
 
 }
 
 .hero h2{
 
-    font-size: clamp(3rem, 5vw, 5rem);
+    font-size: 42px;
 
     line-height: 1.1;
 
@@ -216,8 +216,11 @@ button{
     transition:.4s;
 
     cursor:pointer;
-    margin-top: 40px;
+    margin-top: 30px;
 
+    width:  100%;
+    max-width:320px;
+    align-self: centry;
 }
 
 button:hover{
@@ -246,9 +249,11 @@ button:hover{
 
     gap:40px;
 
-    padding:90px 70px;
+    padding:40px 20px;
 
     background:#161616;
+
+    flex-direction: columns 1fr;
 
 }
 
@@ -288,11 +293,11 @@ button:hover{
 
     display:grid;
 
-    grid-template-columns:repeat(4,1fr);
+    grid-template-columns: 1fr;
 
     gap:20px;
 
-    padding:80px;
+    padding: 20px;
 
 }
 .gallery-title{
@@ -621,6 +626,15 @@ footer a:hover{
     
 
     }
+    .tiles{
+    grid-template-columns:repeat(2,12px);
+    gap:6px;
+}
+
+.tiles span{
+    width:12px;
+    height:12px;
+}
 
     footer{
 
