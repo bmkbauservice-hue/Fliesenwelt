@@ -95,28 +95,7 @@ header{
         0 0 70px #d8b06a;
 
 }
-header h1{
 
-    font-family: "Cinzel", serif;
-
-    font-size: 48px;
-
-    font-weight: 700;
-
-    letter-spacing: 2px;
-
-    color: #050505;
-
-    -webkit-text-stroke: 1.6px #d8b06a;
-
-    text-shadow:
-        0 0 10px rgba(216,176,106,.45),
-        0 0 5px rgba(216,176,106,.35);
-
-    cursor: pointer;
-    transition: .35s;
-
-}
 header h1:hover{
 
     text-shadow:
@@ -126,15 +105,7 @@ header h1:hover{
         0 0 35px #d8b06a;
 
 }
-.tiles{
 
-    display:grid;
-
-    grid-template-columns:repeat(2,18px);
-
-    gap:8px;
-
-}
 
 
 nav{
@@ -184,48 +155,47 @@ nav a:hover{
     height:100vh;
 
     background-image:
-
-    linear-gradient(rgba(0,0,0,.60),rgba(0,0,0,.60)),
-
-    url("images/hero.jpg");
+        linear-gradient(rgba(0,0,0,.60),rgba(0,0,0,.60)),
+        url("images/hero.jpg");
 
     background-size:cover;
-
     background-position:center;
 
     display:flex;
-
     align-items:center;
 
-    padding-left:180px;
-
+    padding:0 8%;
 }
 
 .hero-content{
 
-    max-width:600px;
+    max-width:520px;
 
 }
 
 .hero h2{
 
-    font-size:50px;
+    font-size: clamp(3rem, 5vw, 5rem);
 
-    line-height:1.05;
+    line-height: 1.1;
 
-    margin-bottom:35px;
+    margin-bottom: 30px;
 
-    color:#f5f4f2;
+    color: #fff;
+
+    font-weight: 700;
 
 }
 
 .hero p{
 
-    width:620px;
+    font-size:22px;
 
-    font-size:20px;
+    line-height:1.6;
 
     color:#d8b06a;
+
+    max-width:500px;
 
 }
 
@@ -246,7 +216,7 @@ button{
     transition:.4s;
 
     cursor:pointer;
-    margin-top: 10rem;
+    margin-top: 40px;
 
 }
 
@@ -603,7 +573,7 @@ footer a:hover{
 /* RESPONSIVE */
 /* ========================= */
 
-@media(max-width:900px){
+@media(max-width:768px){
 
     header{
 
@@ -642,6 +612,13 @@ footer a:hover{
     .gallery{
 
         grid-template-columns:repeat(2,1fr);
+
+        .gallery{
+
+        grid-template-columns:1fr;
+
+
+    
 
     }
 
