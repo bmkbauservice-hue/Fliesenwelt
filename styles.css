@@ -191,7 +191,7 @@ nav a:hover{
 
     margin-bottom:35px;
 
-    color:#d8b06a;
+    color:#f5f4f2;
 
 }
 
@@ -199,7 +199,7 @@ nav a:hover{
 
     width:620px;
 
-    font-size:30px;
+    font-size:20px;
 
     color:#d8b06a;
 
@@ -400,6 +400,8 @@ footer a:hover{
     background:#111;
 
     padding:100px 20px;
+
+    
 
 }
 
