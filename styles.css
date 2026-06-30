@@ -74,7 +74,7 @@ header{
 
     font-size:30px;
     letter-spacing:1px;
-    -webkit-text-stroke:1px #d8b06a;
+    
 
     color:#000;
 
@@ -96,15 +96,7 @@ header{
 
 }
 
-header h1:hover{
 
-    text-shadow:
-
-        0 0 10px #d8b06a,
-        0 0 20px #d8b06a,
-        0 0 35px #d8b06a;
-
-}
 
 
 
@@ -164,45 +156,36 @@ nav a:hover{
     display:flex;
     align-items:center;
 
-    padding:120px 25px 60px;
+    padding:150px 40px 60px;
 }
 
 .hero-content{
 
-    max-width:100%;
+    max-width:  600px;
 
 }
 
 .hero h2{
 
-    font-size: 16px;
-
-    line-height: 1.6;
-
-    margin-bottom: 30px;
-
-    color: #fff;
-
-    font-weight: 700;
+    font-size:58px;
+    line-height:1.1;
+    margin-bottom:25px;
+    color:#fff;
 
 }
 
 .hero p{
 
     font-size:22px;
-
     line-height:1.6;
-
     color:#d8b06a;
-
-    max-width:500px;
+    margin-bottom:30px;
 
 }
 
 button{
 
     background:transparent;
-
     color:#d8b06a;
 
     border:2px solid #d8b06a;
@@ -213,14 +196,15 @@ button{
 
     font-size:20px;
 
-    transition:.4s;
+    transition:.35s;
 
     cursor:pointer;
-    margin-top: 30px;
 
-    width:  100%;
+    width:100%;
     max-width:320px;
-    align-self: centry;
+
+    align-self:center;
+
 }
 
 button:hover{
@@ -253,7 +237,7 @@ button:hover{
 
     background:#161616;
 
-    flex-direction: columns 1fr;
+    flex-direction:row;
 
 }
 
@@ -293,11 +277,11 @@ button:hover{
 
     display:grid;
 
-    grid-template-columns: 1fr;
+    grid-template-columns:repeat(4,1fr);
 
     gap:20px;
 
-    padding: 20px;
+    padding:20px;
 
 }
 .gallery-title{
@@ -581,66 +565,48 @@ footer a:hover{
 @media(max-width:768px){
 
     header{
-
         flex-direction:column;
         gap:20px;
-
     }
 
     nav{
-
         flex-wrap:wrap;
         justify-content:center;
-
     }
 
     .hero{
-
-        padding:40px;
+        padding:150px 25px 60px;
         text-align:center;
-        justify-content:center;
-
     }
 
     .hero h2{
+        font-size:42px;
+    }
 
-        font-size:2.8rem;
-
+    .hero p{
+        font-size:18px;
     }
 
     .services{
-
         flex-direction:column;
-
     }
 
     .gallery{
-
-        grid-template-columns:repeat(2,1fr);
-
-        .gallery{
-
         grid-template-columns:1fr;
-
-
-    
-
     }
-    .tiles{
-    grid-template-columns:repeat(2,12px);
-    gap:6px;
-}
 
-.tiles span{
-    width:12px;
-    height:12px;
-}
+    .tiles{
+        grid-template-columns:repeat(2,12px);
+        gap:6px;
+    }
+
+    .tiles span{
+        width:12px;
+        height:12px;
+    }
 
     footer{
-
         flex-direction:column;
         gap:20px;
-
     }
-}
 }
