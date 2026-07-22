@@ -1,0 +1,23 @@
+MK-Portfolio/
+│
+├── index.html
+├── README.md
+│
+├── css/
+│   ├── style.css
+│   ├── variables.css
+│   ├── animations.css
+│   └── responsive.css
+│
+├── js/
+│   ├── app.js
+│   ├── navigation.js
+│   └── animations.js
+│
+├── assets/
+│   ├── images/
+│   ├── icons/
+│   ├── fonts/
+│   └── videos/
+│
+└── favicon.ico
